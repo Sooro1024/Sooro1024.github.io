@@ -17,16 +17,14 @@
     <meta property="og:url" content="https://sooro1024.github.io/">
     <meta property="og:title" content="Suren Gorgoyan - Online CV">
     <meta property="og:description" content="Front-End, experienced React developer ">
-    <meta property="og:image"
-        content="https://sooro1024.github.io/img/img-profile.jpeg">
+    <meta property="og:image" content="https://sooro1024.github.io/img/img-profile.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sooro1024.github.io/">
     <meta property="twitter:title" content="Suren Gorgoyan - Online CV">
     <meta property="twitter:description" content="Front-End, experienced React developer ">
-    <meta property="twitter:image"
-        content="https://sooro1024.github.io/img/img-profile.jpeg">
+    <meta property="twitter:image" content="https://sooro1024.github.io/img/img-profile.jpeg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- favicon -->
     <link href="favicon.png" rel=icon>
@@ -49,6 +47,15 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZGZZ406XH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5ZGZZ406XH');
+    </script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
@@ -84,12 +91,12 @@
                             </p>
                         </div>
                         <ul class="social-icon">
-                            <li><a href="https://www.facebook.com/sooro.gorgoyan" target="_blank"><i
+                            <li id="facebook"><a href="https://www.facebook.com/sooro.gorgoyan" target="_blank"><i
                                         class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/suren-gorgoyan" target="_blank"><i
+                            <li id="linkedin"><a href="https://www.linkedin.com/in/suren-gorgoyan" target="_blank"><i
                                         class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="https://github.com/Sooro1024" target="_blank"><i class="fa fa-github"
-                                        aria-hidden="true"></i></a></li>
+                            <li id="github"><a href="https://github.com/Sooro1024" target="_blank"><i
+                                        class="fa fa-github" aria-hidden="true"></i></a></li>
                             <li class="cv-block"><a href="./pdf/Suren_Gorgoyan_CV.pdf" download="Suren Gorgoyan CV"><i
                                         class="fa fa-save"></i>
                                     <small>Download CV</small>
@@ -209,9 +216,9 @@
                                         </div>
 
                                         <ul>
-                                            <li>English</li>
-                                            <li>Russian</li>
-                                            <li>Armenian</li>
+                                            <li id="english">English</li>
+                                            <li id="russian">Russian</li>
+                                            <li id="armenian">Armenian</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -229,34 +236,39 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="content-item">
+                                    <div itemid="epam" id="epam" class="content-item">
                                         <small>
-                                            07 2021 – Present time</small>
+                                            07 2022 – Present time</small>
+                                        <a href="https://anywhere.epam.com/ru/">
+                                            <h3>EPAM Anywhere</h3>
+                                        </a>
+                                        <h4>Technical lead of Front-end team</h4>
+                                    </div>
+                                    <div itemid="volo" id="volo" class="content-item">
+                                        <small>
+                                            07 2021 – 07 2022</small>
                                         <a href="https://volo.global/">
                                             <h3>Volo</h3>
                                         </a>
-                                        <h4>Software Engineer</h4>
-                                        <!-- <a href="http://arssystems.am/">http://arssystems.am/</a> -->
+                                        <h4>Senior Software Engineer</h4>
                                     </div>
-                                    <div class="content-item">
+                                    <div itemid="bet" id="bet" class="content-item">
                                         <small>
                                             12 2020 – 07 2021</small>
                                         <a href="https://www.betconstruct.com/">
                                             <h3>BetConstruct</h3>
                                         </a>
                                         <h4>Software Engineer</h4>
-                                        <!-- <a href="http://arssystems.am/">http://arssystems.am/</a> -->
                                     </div>
-                                    <div class="content-item">
+                                    <div itemid="arssystems" id="arssystems" class="content-item">
                                         <small>
                                             10 2019 – 12 2020</small>
                                         <a href="http://arssystems.am/">
                                             <h3>Arssystems</h3>
                                         </a>
                                         <h4>React JS developer</h4>
-                                        <!-- <a href="http://arssystems.am/">http://arssystems.am/</a> -->
                                     </div>
-                                    <div class="content-item">
+                                    <div itemid="beaxy" id="beaxy" class="content-item">
                                         <small>06 2019 – 09 2019</small>
                                         <a href="https://www.beaxy.com/">
                                             <h3>Beaxy.com</h3>
@@ -264,7 +276,7 @@
                                         <h4>React JS developer</h4>
                                         <!-- <p>United Kingdom, London</p> -->
                                     </div>
-                                    <div class="content-item">
+                                    <div itemid="ls" id="ls" class="content-item">
                                         <small>02 2019 – 06 2019</small>
                                         <h3>LS Innovations</h3>
                                         <h4>React JS developer</h4>
@@ -418,15 +430,6 @@
         <div><img src="https://mc.yandex.ru/watch/57199354" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156915267-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-156915267-1');
-    </script>
 
 </body>
 
